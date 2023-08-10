@@ -1,0 +1,131 @@
+{% extends "base.html" %} 
+{% load static %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'landing_page.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Start -->
+<div class="Hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-auto">
+                <h1 class="bold blue-text">Supporting International<br>Medical Graduates</h1>
+                <h3 class="bold blue-text mt-4">Teaching the non technical skills you need to survive in the NHS</h3>
+                <a type="button" href="/" class="button mt-4">View Courses</a>
+            </div>
+            <div class="col-md-6 my-auto">
+                <img src="{% static 'assets/hero_image.svg' %}" class="img-fluid" alt="Image of the World">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- About Start -->
+<div class="container About">
+    <div class="row">
+        <div class="col-md-6 my-auto">
+            <img src="{% static 'assets/about_image.svg' %}" class="img-fluid" alt="Image of the World">
+        </div>
+        <div class="col-md-6 my-auto">
+            <h1 class="bold blue-text">Years experience working in the UK health sector</h1>
+            <p class="regular blue-text mt-2">We are a group of established practising medical professionals working in different roles from medical education, primary care and secondary care across NHS trusts in England who have come together to offer a unique brand of support for all health professionals from any background who may be new or require additional support  in the ever changing diverse and demanding workforce in the NHS.</p>
+            <a type="button" href="/" class="button">Learn More</a>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+<!-- Accreditation Start -->
+<div class="Accreditation">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 my-auto">
+                <h3 class="bold blue-text">Earn CPD points with our  accredited courses</h3>
+                <p class="regular blue-text mt-2">Enhance your knowledge and skills in as a doctor working in the NHS through our CPD accredited courses. Our industry-recognized programs ensure you receive credible and up-to-date learning experiences. Acquire new skills and knowledge to become more efficient, productive, and adaptable in your role. Invest in lifelong learning, personal development, and continuous improvement. Unleash your professional success and personal satisfaction with our CPD accredited courses.</p>
+            </div>
+            <div class="col-md-6 my-auto">
+                <img src="{% static 'assets/certification_image.svg' %}" class="img-fluid" alt="Image of the World">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Accreditation End -->
+
+
+<!-- Non Technical Skills Start -->
+<div class="NonTechnicalSkills">
+    <div class="container">
+        <div class="row ">
+            <div class="col-md-4">
+                <div class="NonTechnicalSkill">
+                    <img src="{% static 'assets/skills/awareness.svg' %}" class="img-fluid" alt="Awareness Image">
+                    <h4 class="bold blue-text">Awareness</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="NonTechnicalSkill">
+                    <img src="{% static 'assets/skills/decision_making.svg' %}" class="img-fluid" alt="Decision Making Image">
+                    <h4 class="bold blue-text">Decision Making</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="NonTechnicalSkill">
+                    <img src="{% static 'assets/skills/communication.svg' %}" class="img-fluid" alt="Communication Image">
+                    <h4 class="bold blue-text">Communication</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="NonTechnicalSkill">
+                    <img src="{% static 'assets/skills/leadership.svg' %}" class="img-fluid" alt="Leadership Image">
+                    <h4 class="bold">Leadership</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="NonTechnicalSkill">
+                    <img src="{% static 'assets/skills/teamwork.svg' %}" class="img-fluid" alt="Teamwork Image">
+                    <h4 class="bold blue-text">Teamwork</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="NonTechnicalSkill">
+                    <img src="{% static 'assets/skills/wellbeing.svg' %}" class="img-fluid" alt="Wellbeing Image">
+                    <h4 class="bold blue-text">Wellbeing</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Non Technical Skills End -->
+
+
+<!-- Services Start -->
+<div class="services">
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-4 mt-auto text-center">
+                <img src="{% static 'assets/services/video presentations.svg' %}" class="service-img" alt="Teamwork Image">
+                <h4 class="white-text bold">Video Presentations</h4>
+            </div>
+            <div class="col-md-4 mt-auto text-center">
+                <img src="{% static 'assets/services/research.svg' %}" class="service-img" alt="Teamwork Image">
+                <h4 class="white-text bold">Case Reviews & Case Studies</h4>
+            </div>
+            <div class="col-md-4 mt-auto text-center">
+                <img src="{% static 'assets/services/guidance.svg' %}" class="service-img" alt="Teamwork Image">
+                <h4 class="white-text bold">1 on 1 Guidance</h4>
+            </div>
+        </div>
+        <div class="row mx-auto text-center mt-5">
+            <p class="white-text regular">We will demonstrate through our services: video presentations, case reviews, case studies and 1 on 1 guidance how to amalgamate these non-technical skills into your everyday clinical practice in order to be setting out the best clinical practice in the NHS.</p>
+        </div>
+    </div>
+</div>
+<!-- services End -->
+
+{% endblock %}
